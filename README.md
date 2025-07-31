@@ -63,11 +63,7 @@ ecommerce-frontend-design/
    ```
 
 2. **Run the Project**:
-   - Open `index.html` in a browser, or use a local server for better performance:
-     ```bash
-     npx live-server
-     ```
-   - Access the site at `http://localhost:8080`.
+   - Open `index.html` in a browser, or use a local server for better performance
 
 3. **Dependencies**:
    - No local dependencies required. Bootstrap is assumed to be included via CDN (e.g., `<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">`).

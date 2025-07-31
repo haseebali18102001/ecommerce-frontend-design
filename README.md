@@ -36,19 +36,21 @@ ecommerce-frontend-design/
 ├── productcart.html
 ├── product-listing.html
 ├── checkout.html
-├── styles.css
-├── productgridview.css
-├── productdetailpage.css
-├── productcart.css
-├── product-listing.css
-├── checkout.css
-├── toast.css
-├── index.js
-├── productgridview.js
-├── productdetailpage.js
-├── productcart.js
-├── product-listing.js
-├── checkout.js
+├── css/
+│   ├──styles.css
+│   ├──productgridview.css
+│   ├──productdetailpage.css
+│   ├──productcart.css
+│   ├──product-listing.css
+│   ├──checkout.css
+│   ├──toast.css
+├── css/
+│   ├──index.js
+│   ├──productgridview.js
+│   ├──productdetailpage.js
+│   ├──productcart.js
+│   ├──product-listing.js
+│   ├──checkout.js
 ├── README.md
 ```
 

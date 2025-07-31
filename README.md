@@ -124,8 +124,6 @@ For issues or suggestions, open a GitHub issue or contact the repository owner.
 
 Developed by [haseebali18102001](https://github.com/haseebali18102001)
 
-This will serve the project at http://localhost:8080.
-
 
 Dependencies:
 

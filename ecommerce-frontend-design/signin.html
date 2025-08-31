@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce Home Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/signin.css">
   <link rel="stylesheet" href="css/toast.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="scripts.js" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-  <script src="js/checkout.js"></script>
+  <script src="js/signin.js"></script>
 </head>
 <body>
-
   <!-- Main Header -->
   <header class="main-header">
     <div class="container header-content">
@@ -36,7 +35,7 @@
       <a href="#"><img src="assets/images/Profile.png" alt="Profile"></a>
       <a href="#"><img src="assets/images/Message.png" alt="Message"></a>
       <a href="#"><img src="assets/images/Orders.png" alt="Orders"></a>
-      <a href="productcart.html" class="cart-badge" aria-label="View cart with item count" ><img src="assets/images/Cart.png" alt="My Cart"><span class="cart-count">0</span></a>
+      <a href="productcart.html" class="cart-badge" aria-label="View cart with item count"><img src="assets/images/Cart.png" alt="My Cart"><span class="cart-count">0</span></a>
     </div>
     </div>
   </header>
@@ -61,79 +60,29 @@
       </ul>
     </div>
   </nav>
-    
-
-<main class="container checkout-main">
+    <div class="container">
         <div class="breadcrumb">
-            <a href="index.html">Home</a> &gt; <a href="productcart.html">Cart</a> &gt; Checkout
+            <a href="index.html">Home</a> > Log In
         </div>
-
-        <div class="checkout-container">
-            <div class="checkout-form">
-                <h2>Billing & Shipping Information</h2>
-                <form id="checkout-form">
-                    <div class="form-group">
-                        <label for="full-name">Full Name *</label>
-                        <input type="text" id="full-name" required>
-                    </div>
+        <div class="signin-container">
+            <div class="signin-form">
+                <h2>Log In</h2>
+                <form id="signin-form">
                     <div class="form-group">
                         <label for="email">Email Address *</label>
                         <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="address">Address *</label>
-                        <input type="text" id="address" required>
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" required>
                     </div>
-                    <div class="form-group">
-                        <label for="city">City *</label>
-                        <input type="text" id="city" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="zip">ZIP Code *</label>
-                        <input type="text" id="zip" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="payment-method">Payment Method *</label>
-                        <select id="payment-method" required>
-                            <option value="">Select Payment Method</option>
-                            <option value="credit-card">Credit Card</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="bank-transfer">Bank Transfer</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="place-order-btn">Place Order</button>
+                    <button type="submit" class="place-order-btn">Log In</button>
                 </form>
-                <button class="continue-shopping">Continue Shopping</button>
-            </div>
-            <div class="checkout-summary">
-                <h2>Order Summary</h2>
-                <div class="cart-items"></div>
-                <div class="summary-details">
-                    <div class="line"><span>Subtotal</span><span>$0.00</span></div>
-                    <div class="line"><span>Discount</span><span>- $60.00</span></div>
-                    <div class="line"><span>Tax</span><span>+ $14.00</span></div>
-                    <div class="total"><span>Total</span><span>$0.00</span></div>
-                </div>
+                <button class="continue-shopping" onclick="window.location.href='index.html'">Continue Shopping</button>
             </div>
         </div>
-    </main>
-
-    <!-- Newsletter Signup -->
- <section class="newsletter-section">
-  <div class="newsletter-container">
-    <h2>Subscribe on our newsletter</h2>
-    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
-    <form id="newsletter-form">
-      <div class="input-wrapper">
-        <span class="email-icon">📧</span>
-        <input type="email" id="newsletter-email" placeholder="Email" required />
-      </div>
-      <button type="submit" class="subscribe-btn">Subscribe</button>
-    </form>
-  </div>
-</section>
-
-  <!-- Footer -->
+    </div>
+    <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-columns">

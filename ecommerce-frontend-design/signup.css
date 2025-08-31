@@ -1,0 +1,408 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+.services-section {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  flex: 1 1 100%;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Top Header */
+.top-header {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.top-header .top-left a,
+.top-header .top-right select {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Main Header */
+.main-header {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.search-group {
+  display: flex;
+  border-radius: 16px;
+  gap: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-group input,
+.search-group select,
+.search-group button {
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.search-group input {
+  flex: 1;
+  border: 1px solid #545454;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.search-group button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Navigation */
+.main-nav {
+  background: #f0f0f0;
+  padding: 8px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.nav-list-left {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cart-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-count {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 8px;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Sign Up Container */
+.signup-container {
+  margin: 15px 0;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.signup-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.place-order-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.place-order-btn:hover {
+  background: #16a34a;
+}
+
+.continue-shopping {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.continue-shopping:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 20px 0 10px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-logo img {
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.footer-links h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-links img {
+  width: 100px;
+  margin-top: 8px;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #999;
+  gap: 10px;
+  border-top: 1px solid #eee;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-group {
+    max-width: 100%;
+  }
+
+  .search-group input {
+    width: 100%;
+  }
+
+  .top-header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list-left {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signup-form {
+    padding: 10px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo img {
+    height: 25px;
+  }
+
+  .footer-links img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 25px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .search-group input,
+  .search-group select,
+  .search-group button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .nav-list li a {
+    font-size: 0.8rem;
+  }
+
+  .form-group input {
+    font-size: 0.8rem;
+  }
+
+  .place-order-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .continue-shopping {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .footer-links h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+
+  .bottom-footer {
+    font-size: 0.75rem;
+  }
+}

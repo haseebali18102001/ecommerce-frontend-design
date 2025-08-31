@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 12, name: 'Black kettle for kitchen', price: 80.95, image: 'assets/images/kettle-black.png' },
     ];
 
+
     // Add to cart functionality
     const addToCartButtons = document.querySelectorAll('.item-card .add-to-cart');
     if (!addToCartButtons.length) {
@@ -153,6 +154,24 @@ document.addEventListener('DOMContentLoaded', () => {
             navigateTo('productcart.html');
         });
     });
+    // Deal timer countdown
+  const timerElements = document.querySelectorAll('.deal-timer div');
+  let timeLeft = 4 * 24 * 60 * 60 + 13 * 60 * 60 + 34 * 60 + 56;
+  const updateTimer = () => {
+    const days = Math.floor(timeLeft / (24 * 60 * 60));
+    const hours = Math.floor((timeLeft % (24 * 60 * 60)) / (60 * 60));
+    const minutes = Math.floor((timeLeft % (60 * 60)) / 60);
+    const seconds = timeLeft % 60;
+    timerElements[0].querySelector('strong').textContent = days.toString().padStart(2, '0');
+    timerElements[1].querySelector('strong').textContent = hours.toString().padStart(2, '0');
+    timerElements[2].querySelector('strong').textContent = minutes.toString().padStart(2, '0');
+    timerElements[3].querySelector('strong').textContent = seconds.toString().padStart(2, '0');
+    if (timeLeft > 0) timeLeft--;
+    else clearInterval(timerInterval);
+  };
+  const timerInterval = setInterval(updateTimer, 1000);
+  updateTimer();
+
 
     // Newsletter form
     const newsletterForm = document.querySelector('#newsletter-form');

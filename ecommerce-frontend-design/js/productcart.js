@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+
     // Navigation
     const logo = document.querySelector('.brand-name');
     if (logo) {
@@ -224,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.warn('Remove all button not found on productcart.html. Expected class: .remove-all');
     }
+    
 
     // Newsletter form
     const newsletterForm = document.querySelector('#newsletter-form');

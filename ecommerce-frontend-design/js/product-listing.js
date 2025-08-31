@@ -46,6 +46,26 @@ document.addEventListener('DOMContentLoaded', () => {
             showToast('Error updating cart count', 'error');
         }
     };
+    $(document).ready(function() {
+  // Toggle filter sections
+  $('.filter-header').click(function() {
+    const target = $(this).data('toggle');
+    $('#' + target).collapse('toggle');
+  });
+
+  // Basic cart functionality
+  $('.add-to-cart').click(function() {
+    const id = $(this).data('id');
+    let count = parseInt($('.cart-count').text());
+    $('.cart-count').text(count + 1);
+    alert(`Added product ${id} to cart!`); // Replace with actual cart logic
+  });
+
+  // Favorite button toggle
+  $('.fav-button').click(function() {
+    $(this).toggleClass('active');
+  });
+});
 
     // Save cart to localStorage
     const saveState = () => {

@@ -34,7 +34,6 @@ body {
 .service-card {
   background: #f9f9f9;
   flex: 1 1 100%;
-  max-width: 300px;
   padding: 15px;
   text-align: center;
   border-radius: 8px;
@@ -49,6 +48,7 @@ body {
   border-bottom: 1px solid #eee;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -63,7 +63,7 @@ body {
 /* Main Header */
 .main-header {
   background: #fff;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -88,9 +88,9 @@ body {
 .search-group {
   display: flex;
   border-radius: 16px;
+  gap: 0;
   width: 100%;
   max-width: 500px;
-  gap: 0;
 }
 
 .search-group input,
@@ -139,7 +139,7 @@ body {
 .nav-list-left {
   margin-left: auto;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -148,11 +148,9 @@ body {
   gap: 10px;
 }
 
-.cart-icon {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
+.cart-count {
+  font-size: 0.9rem;
+  color: #333;
 }
 
 /* Breadcrumb */
@@ -172,24 +170,22 @@ body {
   text-decoration: underline;
 }
 
-/* Checkout Container */
-.checkout-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+/* Sign Up Container */
+.signup-container {
   margin: 15px 0;
 }
 
-.checkout-form {
-  flex: 1 1 100%;
+.signup-form {
   background: #fff;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.checkout-form h2 {
-  font-size: 1.2rem;
+.signup-form h2 {
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
@@ -204,8 +200,7 @@ body {
   margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group select {
+.form-group input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -220,7 +215,7 @@ body {
   padding: 10px;
   width: 100%;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   cursor: pointer;
   margin-top: 12px;
 }
@@ -233,149 +228,18 @@ body {
   background: #2563eb;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 8px 15px;
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-  text-align: center;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .continue-shopping:hover {
   background: #1d4ed8;
-}
-
-/* Checkout Summary */
-.checkout-summary {
-  flex: 1 1 100%;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.checkout-summary h2 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.cart-items .item {
-  display: flex;
-  gap: 15px;
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
-}
-
-.cart-items img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.cart-items .details h3 {
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-.cart-items .details p {
-  font-size: 0.85rem;
-  color: #555;
-  margin: 5px 0;
-}
-
-.cart-items .price-qty {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.summary-details .line {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0;
-  font-size: 0.9rem;
-}
-
-.summary-details .total {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Newsletter Section */
-.newsletter-section {
-  background-color: #f3f6f9;
-  padding: 20px 10px;
-  text-align: center;
-}
-
-.newsletter-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.newsletter-container h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.newsletter-container p {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-#newsletter-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.input-wrapper {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 0 8px;
-  height: 36px;
-  flex-grow: 1;
-  max-width: 100%;
-}
-
-.email-icon {
-  font-size: 0.9rem;
-  margin-right: 5px;
-  color: #888;
-}
-
-#newsletter-email {
-  border: none;
-  outline: none;
-  flex-grow: 1;
-  font-size: 0.85rem;
-  padding: 5px 0;
-}
-
-.subscribe-btn {
-  background-color: #0072e5;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 150px;
-}
-
-.subscribe-btn:hover {
-  background-color: #005bb5;
 }
 
 /* Footer */
@@ -399,7 +263,7 @@ body {
 
 .footer-links h4 {
   margin-bottom: 8px;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .footer-links ul {
@@ -413,7 +277,7 @@ body {
 .footer-links a {
   text-decoration: none;
   color: #555;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .footer-links img {
@@ -470,49 +334,29 @@ body {
 
   .nav-list-left {
     margin-left: 0;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .checkout-container {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .checkout-form,
-  .checkout-summary {
-    flex: 1 1 100%;
+  .signup-form {
+    padding: 10px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.2rem;
   }
 
   .footer-columns {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
   }
 
-  .footer-logo p {
-    font-size: 0.85rem;
+  .footer-logo img {
+    height: 25px;
   }
 
-  .social-icons {
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .newsletter-container {
-    padding: 0 10px;
-  }
-
-  #newsletter-form {
-    flex-direction: column;
-  }
-
-  .input-wrapper {
-    max-width: 100%;
-  }
-
-  .subscribe-btn {
-    width: 100%;
-    max-width: 100%;
+  .footer-links img {
+    width: 80px;
   }
 }
 
@@ -536,49 +380,18 @@ body {
     font-size: 0.8rem;
   }
 
-  .checkout-form h2,
-  .checkout-summary h2 {
-    font-size: 1rem;
-  }
-
-  .form-group input,
-  .form-group select {
+  .form-group input {
     font-size: 0.8rem;
   }
 
-  .place-order-btn,
-  .continue-shopping {
-    font-size: 0.85rem;
+  .place-order-btn {
+    font-size: 0.9rem;
     padding: 8px;
   }
 
-  .cart-items img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .cart-items .details h3 {
-    font-size: 0.85rem;
-  }
-
-  .cart-items .details p {
-    font-size: 0.75rem;
-  }
-
-  .summary-details .line {
+  .continue-shopping {
     font-size: 0.8rem;
-  }
-
-  .summary-details .total {
-    font-size: 0.9rem;
-  }
-
-  .newsletter-container h2 {
-    font-size: 1rem;
-  }
-
-  .newsletter-container p {
-    font-size: 0.75rem;
+    padding: 6px 12px;
   }
 
   .footer-links h4 {
